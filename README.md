@@ -1,6 +1,18 @@
-# Udacity_SDC_NanoDegree_Term1_Project2
+# Udacity_SDC_NanoDegree_Term1_Project2_Xin
 ## Project: Build a Traffic Sign Recognition Program
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+
+The Project
+---
+The goals / steps of this project are the following:
+* Load the data set
+* Explore, summarize and visualize the data set
+* Design, train and test a model architecture
+* Use the model to make predictions on new images
+* Analyze the softmax probabilities of the new images
+* Summarize the results with a written report
+
+
 
 Overview
 ---
@@ -24,15 +36,7 @@ All that said, please be concise!  We're not looking for you to write a book her
 
 You're not required to use markdown for your writeup.  If you use another method please just submit a pdf of your writeup.
 
-The Project
----
-The goals / steps of this project are the following:
-* Load the data set
-* Explore, summarize and visualize the data set
-* Design, train and test a model architecture
-* Use the model to make predictions on new images
-* Analyze the softmax probabilities of the new images
-* Summarize the results with a written report
+
 
 ### Dependencies
 This lab requires:
