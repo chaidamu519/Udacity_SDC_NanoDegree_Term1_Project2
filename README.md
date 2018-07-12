@@ -83,7 +83,7 @@ Here are some exmples of the obtained traffic sign images:
  
  ![alt text](https://raw.githubusercontent.com/chaidamu519/Udacity_SDC_NanoDegree_Term1_Project2/master/augmentation3.png)
  
- During the data augementation, these methods are chosen randomly on different images. To resolve the imbalance  of the dataset for 43 classes. The generated image numbers are choses according to the total number of images for each class. The bar chart below shows the resulted distribution:
+ During the data augementation, these methods are chosen randomly on different images. To resolve the imbalance  of the dataset for 43 classes. The generated image numbers are chosen according to the total number of images for each class. The bar chart below shows the resulted distribution:
   ![alt text](https://raw.githubusercontent.com/chaidamu519/Udacity_SDC_NanoDegree_Term1_Project2/master/new_distribution.png)
  
  
@@ -93,7 +93,7 @@ Here are some exmples of the obtained traffic sign images:
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
-The CNN is based on the architecture of LeNet. Since the problem is more complicated than the problem for LeNet, I decided to added one more convolution layer before the fullly connected layers.
+Since the problem is more complicated than the problem for LeNet, I decided to tested the LeNet itself and several variations. The CNN is based on the architecture of LeNet with an extra convolution layer before the FCL.
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -121,7 +121,8 @@ The CNN is based on the architecture of LeNet. Since the problem is more complic
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used the AdamOptimizer and the a batch size of 128 is used to guarentee the training speed.The initial training rate is 0.001 (70 epochs) and then I used the training rate of 0.0001 for fine tuning.The best training result obtained is with a second dropout factor of 0.5 for the second fully connected layer and a first dropout factor of 1. 
+To train the model, I used the AdamOptimizer and the a [small batch size] 
+(https://stats.stackexchange.com/questions/164876/tradeoff-batch-size-vs-number-of-iterations-to-train-a-neural-network) of 32 is used to keep the training speed and to increase the training accuracy. The initial training rate is 0.001 (70 epochs) and then I used the training rate of 0.0001 for fine tuning.The best training result obtained is with a second dropout factor of 0.5 for the second fully connected layer and a first dropout factor of 1. 
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
