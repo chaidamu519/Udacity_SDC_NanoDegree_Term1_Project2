@@ -101,7 +101,7 @@ The CNN is based on the architecture of LeNet. Since the problem is more complic
 | Convolution3 5x5     	| 1x1 stride, valid padding, outputs 400 	|
 | RELU					|												|
 | Max pooling	      	| 2x2 stride,  outputs 14x14x6 				|
-| Fully connected		| Input 420, output 120        									|
+| Fully connected		| Input 400, output 120        									|
 | RELU					|												|
 | Dropout1		| tuning      									|
 | Fully connected		| Input 120, output 84        									|
@@ -109,8 +109,7 @@ The CNN is based on the architecture of LeNet. Since the problem is more complic
 | Dropout2		| tuning     									|
 | Fully connected		| Input 84, output 43       									|
 | Softmax				|     									|
-|						|												|
-|						|												|
+
  
 
 
