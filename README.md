@@ -93,7 +93,7 @@ Here are some exmples of the obtained traffic sign images:
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
-Since the problem is more complicated than the problem for LeNet, I decided to tested the LeNet itself and several variations. The CNN is based on the architecture of LeNet with an extra convolution layer before the FCL.
+Since the problem is more complicated than the MNIST, I decided to tested the LeNet itself as well as several variations with more parameters. The CNN is based on the architecture of LeNet with an extra convolution layer before the FCL.
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -104,13 +104,12 @@ Since the problem is more complicated than the problem for LeNet, I decided to t
 | Convolution2 5x5     	| 1x1 stride, valid padding, outputs 10x10x16 	|
 | RELU					|												|
 | Max pooling	      	| 2x2 stride,  outputs 5x5x16 				|
-| Convolution3 5x5     	| 1x1 stride, valid padding, outputs 400 	|
+| Convolution3 5x5     	| 1x1 stride, valid padding, outputs 500 	|
 | RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 14x14x6 				|
-| Fully connected		| Input 400, output 120        									|
+| Fully connected		| Input 500, output 140        									|
 | RELU					|												|
 | Dropout1		| tuning      									|
-| Fully connected		| Input 120, output 84        									|
+| Fully connected		| Input 140, output 84        									|
 | RELU					|												|
 | Dropout2		| tuning     									|
 | Fully connected		| Input 84, output 43       									|
@@ -121,7 +120,7 @@ Since the problem is more complicated than the problem for LeNet, I decided to t
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used the AdamOptimizer and the a [small batch size](https://stats.stackexchange.com/questions/164876/tradeoff-batch-size-vs-number-of-iterations-to-train-a-neural-network) of 32 is used to keep the training speed and to increase the training accuracy. The initial training rate is 0.001 (70 epochs) and then I used the training rate of 0.0001 for fine tuning.The best training result obtained is with a second dropout factor of 0.5 for the second fully connected layer and a first dropout factor of 1. 
+To train the model, I used the AdamOptimizer and the a [small batch size](https://stats.stackexchange.com/questions/164876/tradeoff-batch-size-vs-number-of-iterations-to-train-a-neural-network) of 32 is used to keep the training speed and to increase the training accuracy. The training rate is 0.0001 for 70 epochs.The best training result obtained is with a second dropout factor of 0.5 for the second fully connected layer and a first dropout factor of 1. 
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
@@ -133,11 +132,11 @@ My final model results were:
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
 
-I first tested the LeNet directly but the validation as well as the training accuracy are low.
+I first tested the LeNet directly but the accuracy is low.
 
 * What were some problems with the initial architecture?
 
-The parameters in the neural network could not be enough and therefore I added one more convolution layer.
+The parameters in the neural network could not be enough and therefore I tested some LeNet variations with an extra convolution layer and more parameters.
 
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
 
