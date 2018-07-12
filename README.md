@@ -168,7 +168,7 @@ The accuracy of tested 6 new signs = 1.000.
 In the end, I calculated the top 5 softmax probabilities for the 6 new images. Here are the results:
 ![alt text](https://raw.githubusercontent.com/chaidamu519/Udacity_SDC_NanoDegree_Term1_Project2/master/read_signs.png)
 
-Since the accuracy is 1.000, I chose the first image in the training set to show along with the accuracy. For the first sign 0f 60 kv/cm, the accuracy is 0.996 and several other speed limit signs have some probabilities. This could be due to the low intensity of the figure (shown in the previous figure). The probabilities for other images are quite close or equal to one.
+Since the accuracy is 1.000, I chose the first image in the training set to show along with the accuracy. For the first sign 0f 60 kv/cm, the accuracy is 0.996 and several other speed limit signs have some probabilities. This could be due to the low intensity of the figure (shown in the previous figure). The probabilities for other images are very close or equal to one.
 
 
 
