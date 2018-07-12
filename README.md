@@ -127,18 +127,23 @@ My final model results were:
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
+
 I first tested the LeNet directly but the validation as well as the training accuracy are low.
 
 * What were some problems with the initial architecture?
-I thought maybe the parameters in the neural network is not enough and therefore I added one more convolution layer.
+
+The parameters in the neural network could not be enough and therefore I added one more convolution layer.
 
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
+
 After training the second architecture, I found that the accuracy is quite good but the accuracy of the validation is much lower compared with the training set. Therefore, I added two dropout layers after the fully-connected-layers to reduce the overfitting. A factor of 0.5 for the second dropout layer is found to be approriate to reduce the overfitting..
 
 * Which parameters were tuned? How were they adjusted and why?
+
 Training rate, dropout factors are tuned. Dropout factors are tuned to change the problem of overfitting or underfitting. The training rate is tuned to approach more to the global minimum.
 
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+
 Adding convolution layer can increaes the number of paramters in the neural network, which in turn reduce the bias of the algorithms. The dropout layer is for regularization, which can be used to reduce the variance of the system.
 
  
