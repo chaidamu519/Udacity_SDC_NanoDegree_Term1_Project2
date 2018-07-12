@@ -61,8 +61,8 @@ Then the data set distribution is shown by the bar chart
 ![alt text](https://raw.githubusercontent.com/chaidamu519/Udacity_SDC_NanoDegree_Term1_Project2/master/original_data.png)
 
 Two probelms can be seen here:
-  1, The number of images for some classes are far less than enough and therefore data augmentation is necessary before training.
-  2, the image distribution is strongly imbalanced. Rebalencing the images in different classes is needed to be taken into account during data augmentation.
+* The number of images for some classes are far less than enough and therefore data augmentation is necessary before training.
+* The image distribution is strongly imbalanced. Rebalencing the images in different classes is needed to be taken into account during data augmentation.
 
 ### Design and Test a Model Architecture
 
