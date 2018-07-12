@@ -60,7 +60,9 @@ Then the data set distribution is shown by the bar chart
 
 ![alt text](https://raw.githubusercontent.com/chaidamu519/Udacity_SDC_NanoDegree_Term1_Project2/master/original_data.png)
 
-The number of images for some classes are far less than enough and therefore data augmentation is necessary before training.
+Two probelms can be seen here:
+  1, The number of images for some classes are far less than enough and therefore data augmentation is necessary before training.
+  2, the image distribution is strongly imbalanced. Rebalencing the images in different classes is needed to be taken into account during data augmentation.
 
 ### Design and Test a Model Architecture
 
@@ -81,7 +83,11 @@ Here are some exmples of the obtained traffic sign images:
  
  ![alt text](https://raw.githubusercontent.com/chaidamu519/Udacity_SDC_NanoDegree_Term1_Project2/master/augmentation3.png)
  
- During the data augementation, these methods are chosen randomly on different images and here I increased the data set 3 times. Then I converted the images to grayscale and normalized the image data. In the end, the images are reshuffled with a 85% for training and 15% for validation. 
+ During the data augementation, these methods are chosen randomly on different images. To resolve the imbalance  of the dataset for 43 classes. The generated image numbers are choses according to the total number of images for each class. The bar chart below shows the resulted distribution:
+  ![alt text](https://raw.githubusercontent.com/chaidamu519/Udacity_SDC_NanoDegree_Term1_Project2/master/new_distribution.png)
+ 
+ 
+ Then I converted the images to grayscale and normalized the image data. 
  
 
 
