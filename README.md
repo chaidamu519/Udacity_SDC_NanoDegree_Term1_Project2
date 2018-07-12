@@ -155,7 +155,7 @@ Here are six German traffic signs that I found on the web:
 
 ![alt text](https://raw.githubusercontent.com/chaidamu519/Udacity_SDC_NanoDegree_Term1_Project2/master/six_new.png)
 
-The images are labeled according to the .csv file that has been read into DataFrame before. Then I preprocessed the images to the same format of the original data set.
+The images are labeled according to the .csv file that has been read into DataFrame before. Then I preprocessed the images to the same format as the original data set.
 
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
