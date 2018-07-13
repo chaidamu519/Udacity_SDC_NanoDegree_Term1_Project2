@@ -91,7 +91,8 @@ Here are some exmples of the obtained traffic sign images:
  
  ##### 3> Grayscale.
  I converted the images to grayscale 
- ![alt text](https://raw.githubusercontent.com/chaidamu519/Udacity_SDC_NanoDegree_Term1_Project2/master/garyscale.png)
+ 
+ ![alt text](https://raw.githubusercontent.com/chaidamu519/Udacity_SDC_NanoDegree_Term1_Project2/master/grayscale.png)
  
  ##### 3> Histogram Equalization.
  Performing local histogram equalization on the dataset to increase the contrast. 
