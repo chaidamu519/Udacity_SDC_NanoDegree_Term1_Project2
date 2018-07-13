@@ -103,9 +103,9 @@ Here are some exmples of the obtained traffic sign images:
 
 
 ##### 1> LeNet.
-Leraing_rate = 0.001
-Epochs = 20
-Batch_Size = 32
+Leraing_rate = 0.001;
+Epochs = 20;
+Batch_Size = 32;
 Results:
 * Training Accuracy = 0.994
 * Validation Accuracy = 0.971
@@ -115,9 +115,9 @@ Results:
 
 One convolutional layer is added before the fully connected layer.
 
-Leraing_rate = 0.001
-Epochs = 20
-Batch_Size = 32
+Leraing_rate = 0.001;
+Epochs = 20;
+Batch_Size = 32;
 Results:
 * Training Accuracy = 0.999
 * Validation Accuracy = 0.959
@@ -188,7 +188,8 @@ The accuracy of tested 5 new signs = 1.000  for the three tested architectures.
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 In the end, I calculated the top 5 softmax probabilities for the 6 new images. Here are the results:
-![alt text](https://raw.githubusercontent.com/chaidamu519/Udacity_SDC_NanoDegree_Term1_Project2/master/top_five.png)
+
+![alt text](https://raw.githubusercontent.com/chaidamu519/Udacity_SDC_NanoDegree_Term1_Project2/master/top5.png)
 
 The top_5 images have always shown similar patterns. For example, the speed limit signs are similar and as a result the top 5 figures are all signs for speed limit. Triangle signs are shown in top 5 for the prediction of sign of children crossing.
 
