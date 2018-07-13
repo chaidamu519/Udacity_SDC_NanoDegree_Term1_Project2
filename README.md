@@ -35,7 +35,7 @@ The goals / steps of this project are the following:
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
 I tested several architectures and here are the links:
-* LeNet [project code_LeNet](https://github.com/chaidamu519/Udacity_SDC_NanoDegree_Term1_Project2/blob/master/Traffic_Sign_Classifier_LeNet.ipynb)
+* LeNet [project code_LeNet](https://github.com/chaidamu519/Udacity_SDC_NanoDegree_Term1_Project2/blob/master/Traffic_Sign_Classifier-LeNet.ipynb)
 * LeNet_variation (add one more convoluntional layer) [project code_LeNet_Variation](https://github.com/chaidamu519/Udacity_SDC_NanoDegree_Term1_Project2/blob/master/LeNet_Variation.ipynb)
 * simplified VGG [project code_VGG](https://github.com/chaidamu519/Udacity_SDC_NanoDegree_Term1_Project2/blob/master/Traffic_Sign_Classifier_VGG.ipynb)
 
