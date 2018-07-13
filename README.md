@@ -167,7 +167,7 @@ I started by testing the LeNet without data augmentation and the validation accu
 
 During the training, I added dropout layers for all the architectures as a regularization tool, which can reduce the overfitting. I added two several dropout layers after each fully connected layer. A relatively low value of 0.5 is used on the dropout layers. 
 
-The VGG architecture is much deeper and powerful than LeNet. Its learning capability is thus much higher. Only 3x3 convolution and 2x2 pooling are used throughout the whole network. The depth is therefore very important for the performance of the CNN.
+The VGG architecture is much deeper and powerful than LeNet.  Only 3x3 convolution and 2x2 pooling are used throughout the whole network. The depth is therefore very important for the performance of the neural network.
 
 ### Test a Model on New Images
 
