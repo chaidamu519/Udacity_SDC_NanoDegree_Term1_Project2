@@ -104,12 +104,12 @@ Since the problem is more complicated than the MNIST, I decided to tested the Le
 | Convolution2 5x5     	| 1x1 stride, valid padding, outputs 10x10x16 	|
 | RELU					|												|
 | Max pooling	      	| 2x2 stride,  outputs 5x5x16 				|
-| Convolution3 5x5     	| 1x1 stride, valid padding, outputs 500 	|
+| Convolution3 5x5     	| 1x1 stride, valid padding, outputs 400 	|
 | RELU					|												|
-| Fully connected		| Input 500, output 140        									|
+| Fully connected		| Input 400, output 120        									|
 | RELU					|												|
 | Dropout1		| tuning      									|
-| Fully connected		| Input 140, output 84        									|
+| Fully connected		| Input 120, output 84        									|
 | RELU					|												|
 | Dropout2		| tuning     									|
 | Fully connected		| Input 84, output 43       									|
@@ -120,7 +120,7 @@ Since the problem is more complicated than the MNIST, I decided to tested the Le
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used the AdamOptimizer and the a [small batch size](https://stats.stackexchange.com/questions/164876/tradeoff-batch-size-vs-number-of-iterations-to-train-a-neural-network) of 32 is used to keep the training speed and to increase the training accuracy. The training rate is 0.0001 for 70 epochs.The best training result obtained is with a second dropout factor of 0.5 for the second fully connected layer and a first dropout factor of 1. 
+To train the model, I used the AdamOptimizer and the a [small batch size](https://stats.stackexchange.com/questions/164876/tradeoff-batch-size-vs-number-of-iterations-to-train-a-neural-network) of 32 is used to the training speed. The training rate is 0.0005 for 70 epochs.The best training result obtained is with a second dropout factor of 0.5. 
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
